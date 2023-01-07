@@ -2,6 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
   "settings": {
+    "appearanceTools": true,
     "color": {
       "defaultPalette": false,
       "palette": [
@@ -93,7 +94,10 @@
       "duotone": [
         {
           "slug": "u-pink-sunset",
-          "colors": ["#11245e", "#dc4379"],
+          "colors": [
+            "#11245e",
+            "#dc4379"
+          ],
           "name": "Udemy Pink Sunset"
         }
       ],
@@ -121,6 +125,15 @@
           "custom": false,
           "gradients": [],
           "customGradient": false
+        },
+        "typography": {
+          "fontFamilies": [
+            {
+              "fontFamily": "Pacifico, sans-serif",
+              "slug": "u-pacifico",
+              "name": "Theme Pacifico"
+            }
+          ]
         }
       },
       "core/cover": {
@@ -128,7 +141,84 @@
           "duotone": [],
           "customDuotone": false
         }
+      },
+      "core/preformatted": {
+        "typography": {
+          "fontSizes": [],
+          "customFontSize": false
+        }
+      },
+      "core/code": {
+        "typography": {
+          "fontSizes": [],
+          "customFontSize": false
+        }
       }
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true,
+      "units": [
+        "px",
+        "rem",
+        "vh",
+        "vw",
+        "%"
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Rubik, sans-serif",
+          "slug": "u-rubik",
+          "name": "Theme Rubik"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "0.75rem",
+          "name": "Small"
+        },
+        {
+          "slug": "medium",
+          "size": "1.25rem",
+          "name": "Medium"
+        },
+        {
+          "slug": "large",
+          "size": "2.25rem",
+          "name": "Large"
+        },
+        {
+          "slug": "x-large",
+          "size": "3rem",
+          "name": "Extra Large"
+        },
+        {
+          "slug": "gigantic",
+          "size": "3.75rem",
+          "name": "Gigantic"
+        }
+      ],
+      "lineHeight": true,
+      "dropCap": true,
+      "fontWeight": true,
+      "fontStyle": true,
+      "textDecoration": true,
+      "textTransform": true,
+      "letterSpacing": true
+    },
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1100px"
     }
   },
   "styles": {
@@ -138,8 +228,70 @@
     },
     "blocks": {
       "core/button": {
-
+        "color": {
+          "gradient": "var(--wp--preset--gradient--u-summer-dog)"
+        }
+      },
+      "core/pullquote": {
+        "border": {
+          "width": "2px",
+          "radius": "10px",
+          "style": "solid",
+          "color": "#2EA043"
+        },
+        "spacing": {
+          "margin": {
+            "top": "1rem",
+            "left": "2rem",
+            "right": "2rem"
+          }
+        }
+      },
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--u-pacifico)"
+        }
       }
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color-u-primary)"
+        },
+        ":active": {
+          "color": {
+            "text": "#2EA043"
+          }
+        },
+        ":hover": {
+          "color": {
+            "text": "#2EA043"
+          }
+        }
+      }
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--u-rubik)",
+      "fontSize": "16px",
+      "fontStyle": "normal",
+      "fontWeight": "normal",
+      "textDecoration": "none",
+      "textTransform": "none"
+    },
+    "spacing": {
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "blockGap": "4rem"
     }
   }
 }
