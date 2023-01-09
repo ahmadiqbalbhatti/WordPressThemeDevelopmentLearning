@@ -1029,6 +1029,11 @@ body {
     font-family: Rubik, sans-serif
 }
 
+.padding-for-left-right-side{
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+
 .secondary-menu, .secondary-menu ul {
     display: flex;
     gap: 1rem
