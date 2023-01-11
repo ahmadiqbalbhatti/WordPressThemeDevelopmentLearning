@@ -1034,6 +1034,9 @@ body {
     padding-right: 2rem;
 }
 
+.my-margin-for-para{
+    margin-right: 0 !important;
+}
 .secondary-menu, .secondary-menu ul {
     display: flex;
     gap: 1rem
@@ -1042,6 +1045,10 @@ body {
 .secondary-menu li a {
     --tw-text-opacity: 1;
     color: rgb(229 231 235 / var(--tw-text-opacity))
+}
+
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    margin-right: 0 !important;
 }
 
 .secondary-menu li:not(:first-child) a {
