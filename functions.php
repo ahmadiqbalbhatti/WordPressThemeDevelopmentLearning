@@ -12,7 +12,7 @@ include (get_theme_file_path('/includes/front/setup.php'));
  * call back requires a function that returns scripts and style.
  * this WP_ENQUEUE_SCRIPS is used to enqueue styles and scripts.
  * So using prefix in the function name ensures that the callback function doesn't exist before.
- * u_ is the prefix in the function to make sure that this function name is not exists in the any
+ * u_ is the prefix in the function to make sure that this function name is not exists in any
  *  prebuilt WordPress function.
 */
 add_action('wp_enqueue_scripts', 'u_enqueue');

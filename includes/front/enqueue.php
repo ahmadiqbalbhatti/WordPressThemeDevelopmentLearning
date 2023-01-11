@@ -1,7 +1,7 @@
 <?php
 
 // How to Register Styles in the WordPress
-function u_enqueue()
+function u_enqueue(): void
 {
     wp_register_style(
         'u_font_rubik',

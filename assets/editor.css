@@ -10,8 +10,8 @@
     left: auto !important;
 }
 
-.wp-block-group.flex
-.wp-block-navigation-item:not(:first-child)
+.wp-block-group.flex,
+.wp-block-navigation-item:not(:first-child),
 .wp-block-navigation-item__content {
     border-left-width: 1px;
     --tw-border-opacity: 1;

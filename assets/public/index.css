@@ -309,7 +309,7 @@ img, video {
 }
 
 .right-0 {
-    right: 0px
+    right: 0
 }
 
 .left-auto {
@@ -524,7 +524,7 @@ img, video {
 }
 
 .basis-0 {
-    flex-basis: 0px
+    flex-basis: 0
 }
 
 .cursor-text {
@@ -1222,7 +1222,9 @@ body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alig
     background-color: rgb(243 244 246 / var(--tw-bg-opacity)) !important
 }
 
-.sidebar-tags a:before, .post-content-tags a:before {
+.sidebar-tags a:before,
+.post-content-tags a:before,
+.comment-date:before{
     content: "\f40a";
     display: inline-block;
     font-family: bootstrap-icons !important;
@@ -1238,16 +1240,6 @@ body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alig
 
 .comment-date:before {
     content: "\f293";
-    display: inline-block;
-    font-family: bootstrap-icons !important;
-    font-style: normal;
-    font-weight: 400 !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: middle;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
 }
 
 .comments-section h3, .comments-section .says, .comments-section .comment-edit-link, .comments-section .comment-reply-link, .comments-section label {
@@ -1605,7 +1597,7 @@ body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alig
 
 .wp-block-udemy-plus-header-tools .cart-menu-item .cart-dropdown {
     position: absolute;
-    right: 0px;
+    right: 0;
     left: auto;
     top: 100%;
     display: none;
