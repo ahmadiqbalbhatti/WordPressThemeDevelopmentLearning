@@ -11,6 +11,7 @@ function u_setup_theme(): void
         'https://fonts.googleapis.com/css2?family=Pacifico&display=swap',
         'assets/bootstrap-icons/bootstrap-icons.css',
         'assets/public/index.css',
+        'assets/editor.css',
     ]);
 
 
