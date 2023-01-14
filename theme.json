@@ -229,7 +229,7 @@
         "blocks": {
             "core/button": {
                 "color": {
-                    "gradient": "var(--wp--preset--gradient--u-summer-dog)"
+                    "background": "#11245e"
                 }
             },
             "core/pullquote": {
@@ -293,5 +293,14 @@
             },
             "blockGap": "4rem"
         }
-    }
+    },
+    "customTemplates": [
+        {
+            "name": "full-width-page",
+            "title": "Full Width Page",
+            "postTypes": [
+                "page"
+            ]
+        }
+    ]
 }
